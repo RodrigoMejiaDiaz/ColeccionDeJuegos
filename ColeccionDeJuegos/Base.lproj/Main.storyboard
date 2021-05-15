@@ -32,7 +32,7 @@
                     <navigationItem key="navigationItem" id="A3h-8n-TqP">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="T7B-V3-kJg">
                             <connections>
-                                <segue destination="NMZ-kp-C33" kind="show" id="Wgq-A9-d90"/>
+                                <segue destination="NMZ-kp-C33" kind="show" identifier="juegoSegue" id="Wgq-A9-d90"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
