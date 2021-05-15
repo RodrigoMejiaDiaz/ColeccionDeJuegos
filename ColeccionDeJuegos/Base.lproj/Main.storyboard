@@ -71,6 +71,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vM5-MA-SQf">
+                                <rect key="frame" x="179.5" y="389" width="55" height="30"/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="NMZ-kp-C33" eventType="touchUpInside" id="Ly0-N9-p5a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -78,8 +85,10 @@
                             <constraint firstItem="bhs-Yi-e1Z" firstAttribute="top" secondItem="zoT-yk-Tfm" secondAttribute="bottom" constant="20" id="7DG-5Y-2o0"/>
                             <constraint firstItem="bhs-Yi-e1Z" firstAttribute="centerX" secondItem="xTU-Bk-Jiz" secondAttribute="centerX" id="Spz-Pa-eGX"/>
                             <constraint firstItem="bhs-Yi-e1Z" firstAttribute="width" secondItem="zoT-yk-Tfm" secondAttribute="width" id="Xns-QX-trx"/>
+                            <constraint firstItem="vM5-MA-SQf" firstAttribute="centerX" secondItem="xTU-Bk-Jiz" secondAttribute="centerX" id="aea-5k-0FU"/>
                             <constraint firstItem="qPy-eW-q3o" firstAttribute="top" secondItem="bhs-Yi-e1Z" secondAttribute="bottom" constant="20" id="clY-eo-Nao"/>
                             <constraint firstItem="zoT-yk-Tfm" firstAttribute="top" secondItem="GVy-FP-XWV" secondAttribute="top" constant="32" id="rQD-rf-0Vx"/>
+                            <constraint firstItem="vM5-MA-SQf" firstAttribute="top" secondItem="qPy-eW-q3o" secondAttribute="bottom" constant="15" id="sKA-MT-pJz"/>
                             <constraint firstItem="qPy-eW-q3o" firstAttribute="centerX" secondItem="xTU-Bk-Jiz" secondAttribute="centerX" id="us3-Rh-a0I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GVy-FP-XWV"/>
@@ -100,6 +109,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="JuegoImageView" destination="zoT-yk-Tfm" id="Jb4-7E-xZR"/>
+                        <outlet property="agregarActualizarBoton" destination="qPy-eW-q3o" id="JsW-Mw-6nK"/>
+                        <outlet property="eliminarBoton" destination="vM5-MA-SQf" id="7td-Kw-GYW"/>
                         <outlet property="tituloTextField" destination="bhs-Yi-e1Z" id="hU4-dK-Tr4"/>
                     </connections>
                 </viewController>

@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let juego = juegos[indexPath.row]
         performSegue(withIdentifier: "juegoSegue", sender: juego)
     }
-    
+     
     @IBOutlet weak var tableView: UITableView!
     var juegos : [Juego] = []
     
