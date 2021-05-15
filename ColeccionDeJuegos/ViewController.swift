@@ -25,6 +25,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let juego = juegos[indexPath.row]
         performSegue(withIdentifier: "juegoSegue", sender: juego)
     }
+    
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+         if editingStyle == .delete {
+             let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+             context.delete(juegos[indexPath.row])
+             (UIApplication.shared.delegate as! AppDelegate).saveContext()
+             
+             //Se llama la función viewWillAppear para que actualice los datos de la tabla
+             viewWillAppear(true)
+         }
+     }    
      
     @IBOutlet weak var tableView: UITableView!
     var juegos : [Juego] = []
