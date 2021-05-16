@@ -18,6 +18,8 @@ class JuegosViewController: UIViewController, UIImagePickerControllerDelegate, U
     var imagePicker = UIImagePickerController()
     var juego:Juego? = nil
     
+    let categorias:[String] = ["Acción","Aventura","Estrategia","Rpg"]
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
